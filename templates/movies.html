@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2 class="mb-4 text-center">Top Picks for You</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% for movie in movies %}
+            <div class="col">
+                <div class="card movie-card h-100 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/' + movie.poster) }}" class="card-img-top" alt="{{ movie.title }} poster">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            {{ movie.title }}
+                            {% if movie.new %}
+                                <span class="badge new-release">New Release</span>
+                            {% endif %}
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,43 @@
+body {
+    background-color: #fdfcfb;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.custom-navbar {
+    background-color: #2b2d42;
+}
+
+h2 {
+    color: #2b2d42;
+}
+
+.movie-card {
+    border: none;
+    background-color: #ffffff;
+    border-radius: 12px;
+    transition: transform 0.2s;
+}
+
+.movie-card:hover {
+    transform: scale(1.02);
+}
+
+.movie-card img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.rating {
+    margin-top: 10px;
+}
+
+.new-release {
+    background-color: #ff595e;
+    color: white;
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 5px;
+    margin-left: 8px;
+}
